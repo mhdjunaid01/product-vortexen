@@ -97,6 +97,7 @@ https://dummyjson.com/products
 ```
 
 ---
+<<<<<<< HEAD
 
 
 ## 🔍 How It Works
@@ -129,4 +130,39 @@ Built with Tailwind CSS responsive utilities.
 
 <img width="1908" height="879" alt="image" src="https://github.com/user-attachments/assets/0a5c6c1e-366b-4f14-8786-8ebef54239d3" />
 
+=======
+
+
+## 🔍 How It Works
+
+### 1. Fetch Products
+
+`productService.js` fetches the product list using axios.
+
+### 2. Processing Logic
+
+`useProducts.js` manages:
+
+* loading state
+* search filtering
+* price sorting
+* memoized computed results
+
+### 3. UI Components
+
+* `ProductCard.jsx` → product preview
+* `ProductModal.jsx` → detailed popup
+
+### 4. Fully Responsive
+
+Built with Tailwind CSS responsive utilities.
+
+---
+
+## 📱 Screenshots
+
+<img width="1908" height="879" alt="image" src="https://github.com/user-attachments/assets/0a5c6c1e-366b-4f14-8786-8ebef54239d3" />
+
+
+>>>>>>> f4216fe5d4fac794fe5616eeec19a7e77f86269d
 
