@@ -64,7 +64,7 @@ app/
 Clone the repo:
 
 ```bash
-git clone https://github.com/your-username/product-listing-app.git
+git clone [https://github.com/your-username/product-listing-app.git](https://github.com/mhdjunaid01/product-vortexen.git)
 cd product-listing-app
 ````
 
