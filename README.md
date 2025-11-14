@@ -1,36 +1,132 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 📦 Product Listing App
 
-First, run the development server:
+A fully responsive **Product Listing Application** built with **Next.js 16**, **Tailwind CSS**, **Axios**, and a clean **modular architecture**.  
+Products are fetched from the public DummyJSON API and displayed with search, sorting, and a modal detail view.
+
+---
+
+## 🚀 Features
+
+- **Fetch Products** from DummyJSON API  
+- **Real-time Product Search** (filters by title)
+- **Price Sorting**  
+  - Low → High  
+  - High → Low
+- **Responsive Grid Layout**  
+  - Mobile (1 column)  
+  - Tablet (2–3 columns)  
+  - Desktop (4 columns)
+- **Reusable UI Components**  
+  - `<ProductCard />`  
+  - `<ProductModal />`
+- **Custom Hook**  
+  - `useProducts()` (fetching + filtering + sorting)
+- **Axios HTTP client**
+- **Next.js Image Optimization**
+- **Tailwind CSS for styling**
+- **Clean modular folder structure**
+
+---
+
+## 🗂 Folder Structure
+
+```
+
+app/
+├── page.jsx
+├── components/
+│   ├── ProductCard.jsx
+│   ├── ProductModal.jsx
+│   └── index.js
+├── hooks/
+│   └── useProducts.js
+└── services/
+└── productService.js
+
+````
+
+---
+
+## 🔧 Tech Stack
+
+- **Next.js 16 (App Router + Turbopack)**
+- **React 18**
+- **Tailwind CSS**
+- **Axios**
+- **DummyJSON API**
+- **Next.js `<Image />` Optimization**
+
+---
+
+## 🛠 Installation & Setup
+
+Clone the repo:
+
+```bash
+git clone https://github.com/your-username/product-listing-app.git
+cd product-listing-app
+````
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit the app in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🌐 API Used
 
-To learn more about Next.js, take a look at the following resources:
+DummyJSON Products Endpoint:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+https://dummyjson.com/products
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔍 How It Works
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 1. Fetch Products
+
+`productService.js` fetches the product list using axios.
+
+### 2. Processing Logic
+
+`useProducts.js` manages:
+
+* loading state
+* search filtering
+* price sorting
+* memoized computed results
+
+### 3. UI Components
+
+* `ProductCard.jsx` → product preview
+* `ProductModal.jsx` → detailed popup
+
+### 4. Fully Responsive
+
+Built with Tailwind CSS responsive utilities.
+
+---
+
+## 📱 Screenshots
+
+<img width="1908" height="879" alt="image" src="https://github.com/user-attachments/assets/0a5c6c1e-366b-4f14-8786-8ebef54239d3" />
+
+
